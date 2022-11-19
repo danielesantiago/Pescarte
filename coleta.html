@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pescarte</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+<style>
+body {
+  background-color: #96C3EC;
+  font-family: "source-code-pro";
+}
+
+h1 {
+    text-align: left; 
+    margin-left: 200px;
+}
+
+.lefted {
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+}
+
+.button {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2C88D9;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.button_dado {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #2C88D9;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 15px;
+  border-color: #2C88D9;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.footer{
+background-color:#fff;
+margin:0;
+padding:0;
+width:100vw;
+height:7vh;
+overflow:auto;
+}
+
+.data {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  width: 190px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<!-- Header -->
+<header>
+  <img style="margin-bottom: 50px;" src="imgs/pescarte-topo.png" alt="Table Setting" width="100" class="lefted">
+    
+  <h1  style="color:#354858; font-weight: bold; font-size: 30px;width: 40%; margin-top: -100px;">Dados Abertos Sobre a Cotação de Pescados do Ceasa/RJ</h1>
+
+<!-- Logo Pescarte -->
+  <div>
+      <button class="button" style="position:relative; left:80%; top:-140px; margin-bottom: 150px;">Coleta de Cotações</button>
+      <button class="button" style="position:relative; left:80%; top:-280px;">Visualização de Dados</button>
+      <a href="index.html" style="text-decoration:none"><button class="button" style="position:relative; left:80%; top:-270px;">Home</button></a>
+  </div>
+  <hr style="width:100%; margin-top: -200px;">
+</header>
+
+<!-- Page content -->
+<div style="max-width:1100px;">
+
+  <div class="form-group" style="margin-top:100px;">
+    <label style="margin-left:50%; color:#354858; font-weight: bold; font-size: 20px; text-align: center; font-family: Arial, Helvetica, sans-serif;" for="data_escolhida">Os dados serão coletados até</label>
+    <button class="button_dado" type="button" name="data_escolhida" id="data_escolhida">19/11/2022</button>
+  </div>
+
+  <div class="form-group" style="margin-top:100px;">
+    <label style="margin-left:30%; color:#354858; font-weight: bold; font-size: 20px; text-align: center; font-family: Arial, Helvetica, sans-serif;" for="data_escolhida">De:</label>
+    <input class="data" type="date" name="data_escolhida" id="data_escolhida" />
+  </div>
+
+  <div class="form-group" style="margin-top:-40px; margin-left:90%; margin-bottom: 100px;">
+    <label style=" color:#354858; font-weight: bold; font-size: 20px; text-align: center; font-family: Arial, Helvetica, sans-serif; margin-left: -50px; margin-top:-35px;" for="data_escolhida">Até:</label>
+    <input class="data" type="date" name="data_escolhida" id="data_escolhida" />
+  </div>
+
+
+  <div>
+    <button class="button_dado" style="position:relative; left:700px; top:50px; margin-bottom: 150px;">Atualizar</button>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer style="background-color: #fff;">
+<img  src="imgs/footer.png" style="width: 70%; margin-left: 250px;"/>
+</footer>
+
+</body>
+</html>
