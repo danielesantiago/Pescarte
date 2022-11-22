@@ -1,0 +1,85 @@
+.container-main-content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 60px auto;
+}
+.collection-date h2{
+    text-align: right;
+    font-size: 18px;
+    color: #354858;
+}
+.collection-date h2 span{
+    border-bottom: 1px solid #3d7db1;
+    padding-bottom: 2px;
+    color: #3d7db1;
+}
+.content-period{
+    display: flex;
+    gap: 40px;
+    border: 1px solid #005CC8;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 20px auto 40px;
+}
+.content-period .select-date{
+    font-size: 18px;
+    color: #354858;
+    font-weight: bold;
+}
+.select-date input{
+    border: none;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.content-filters{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #26333d
+}
+.content-filters .valores{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.valores .filter-valores{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.content-filters .fontes{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+.content-filters .fontes h3, .select-pescados h3{
+    margin-top: -5px;
+}
+.content-filters .select-pescados{
+    display: flex;
+    gap: 25px;
+}
+.send-request{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.send-request button{
+    font-size: 18px;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 4px;
+    background-color: #616568;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
