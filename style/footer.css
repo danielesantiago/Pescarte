@@ -1,0 +1,27 @@
+.footer-pescarte{
+    background-color: #fff;
+    width: 100%;
+}
+.container-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+}
+.container-footer-img{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.container-footer img{
+    max-width: 100px;
+    width: 100%;
+    height: max-content;
+}
+.container-footer img.ibama-logo{
+    max-width: 50px;
+    max-height: 50px;
+}

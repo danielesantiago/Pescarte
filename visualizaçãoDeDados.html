@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/data-view.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <title>Visualização de Dados sobre Pescados</title>
+</head>
+<body class="view-data">
+    <header>
+        <div class="logo-pescarte">
+            <img src="imgs/pescarte-topo.png" alt="">
+        </div>
+        <div class="title-page">
+            <h1>Dados Abertos sobre Cotações de</br> Pescados do CEASA / RJ</h1>
+        </div>
+        <div class="container-menu">
+            <a href="" class="container-button-coleta">
+                <button>Coleta de cotações</button>
+            </a>
+            <a href="" class="container-button-view-data">
+                <button>Visualização de dados</button>
+            </a>
+            <a href="" class="container-button-home">
+                <button>Home</button>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container-main-content">
+            <div class="collection-date">
+                <h2>Os dados estão coletados até <span>10/10/2021</span></h2>
+            </div>
+            <div class="content-period">
+                <div class="select-date">
+                    <label for="periodo-inicio">Período: </label>
+                    <input type="date" name="periodo-inicio">
+                </div>
+                <div class="select-date">
+                    <label for="periodo-fim">Até: </label>
+                    <input type="date" name="periodo-fim">
+                </div>
+            </div>
+            <div class="content-filters">
+                <div class="valores">
+                    <div class="filter-valores">
+                        <label for="valor-minimo">Valor mínimo:</label>
+                        <input type="range" value="50" max="100">
+                        <span>50</span>
+                    </div>
+                    <div class="filter-valores">
+                        <label for="valor-maximo">Valor máximo:</label>
+                        <input type="range" value="50" max="100">
+                        <span>50</span>
+                    </div>
+                    <div class="filter-valores">
+                        <label for="valor-comum">Valor mais comum:</label>
+                        <input type="range" value="50" max="100">
+                        <span>50</span>
+                    </div>
+                    
+                </div>
+                <div class="fontes">
+                    <h3>Fontes: </h3>
+                    <div class="select-fontes">
+                        <div class="container-select">
+                            <input type="checkbox" name="ceasa">
+                            <label for="ceasa">CEASA</label>
+                        </div>
+                        <div class="container-select">
+                            <input type="checkbox" name="supermercado-a">
+                            <label for="supermercado-a">SUPERMERCADO A</label>
+                        </div>
+                        <div class="container-select">
+                            <input type="checkbox" name="supermercado-b">
+                            <label for="supermercado-b">SUPERMERCADO B</label>
+                        </div>
+                        <div class="container-select">
+                            <input type="checkbox" name="todas">
+                            <label for="todas">TODAS</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="select-pescados">
+                    <h3>Pescados:</h3>
+                    <select name="pescados" id="pescados">
+                        <option value="atum">ATUM</option>
+                        <option value="sardinha">SARDINHA</option>
+                        <option value="tilapia">TILAPIA</option>
+                        <option value="pacu">PACU</option>
+                    </select>
+                </div>
+            </div>
+            <div class="send-request">
+                <button class="visualizar">Visualizar</button>
+                <button class="exportar">Exportar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-pescarte">
+        <div class="container-footer">
+            <div class="container-footer-img">
+                <img src="imgs/pescarte.png" alt="Logo de pescarte">
+                <img src="imgs/ipead.png" alt="Logo Ipead">
+                <img src="imgs/uenf.png" alt="Logo uenf">
+                <img src="imgs/petrobras.png" alt=" Logo da petrobras">
+                <img src="imgs/ibama.png" alt="Logo do Ibama" class="ibama-logo">
+            </div>
+            
+            <p>A realização do Projeto Pescarte é uma medida de mitigação exigida pelo licenciamento ambiental federal, conduzido pelo IBAMA</p>
+        </div>
+    </footer>
+</body>
+</html>
